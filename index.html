@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>RheinhessenRiders</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="lib/materialize-src/sass/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/main.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+<div class="valign-wrapper">
+        <div class="container row">
+            <img src="img/rr-logo.png" class="col s12 m6 offset-m3 l4 offset-l4" />
+            <form class="col s12 m6 offset-m3 l4 offset-l4">
+                <div class="row" id="input-fields">
+                    <div class="input-field col s12">
+                        <input id="username" type="text" class="validate">
+                        <label for="username">Benutzername*</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate" minlength="8">
+                        <label for="password">Passwort*</label>
+                    </div>
+                    <a class="btn waves-effect waves-light right" onclick="loginSubmit()">LOGIN
+                    </a>
+                </div>
+                <div class="center hidden" id="loading">
+                    <div class="preloader-wrapper active">
+                        <div class="spinner-layer spinner-red-only">
+                            <div class="circle-clipper left">
+                                <div class="circle"></div>
+                            </div><div class="gap-patch">
+                            <div class="circle"></div>
+                        </div><div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="center hidden" id="success" style="position: relative; top: -80px;">
+                    <i class="material-icons large green-text">check</i>
+                </div>
+            </form>
+        </div>
+</div>
+
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="lib/jquery.js"></script>
+<script type="text/javascript" src="lib/materialize-src/js/materialize.min.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>
